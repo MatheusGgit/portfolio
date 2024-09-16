@@ -1,0 +1,666 @@
+a, span, h1, p{
+    font-family: "Playfair Display", serif;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    min-width: 100%;
+}
+
+.lista li a  {
+    color: #ffffff;
+}
+
+a {
+    text-decoration: none;
+    font-size: 20px;
+}
+
+@media only screen and (min-width: 1025px) {
+    /* configurações gerais e index */
+    .separator {
+        border: 1px solid #c2c2c2;
+        margin: 5vh auto; /* Margem vertical de 5vh e margem horizontal automática para centralização */
+        width: 800px;
+        border-radius: 70%;
+        position: relative;
+    }
+    
+    
+    .content {
+        height: auto;
+        max-height: auto;
+        width: 100%;
+    }
+    
+    .header {
+        display: flex;
+        position: fixed;
+        align-items: center;
+        justify-content: space-between;
+        height: 10vh;
+        width: 100%;
+        background-color: transparent;
+        position: absolute;
+        z-index: 2;
+    }
+    
+    .lista li {
+        display: inline;
+    }
+    
+    .logo a {
+        margin-left: 25px;
+        font-size: 35px;
+        color: #ffffff;
+    }
+    
+    .links {
+        margin-right: 25px;
+    }
+    
+    .links a {
+        padding: 5px  5px;
+    }
+    
+    .footer {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 50px;
+        background-color: black;
+        color: #ffffff;
+    }
+    
+    .imagem-apresentacao {
+        height: 55vh;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        overflow: hidden;
+        position: relative;
+    }
+    
+    .imagem-pfp {
+        height: 25vh;
+        width: 25vh;
+        border-radius: 100%;
+        background-color: #ffffff;
+    }
+    
+    .imagem-pfp img {
+        max-height: 25vh;
+        max-width: 25vh;
+        min-height: 25vh;
+        min-width: 25vh;
+        border-radius: 100%;
+        position: relative;
+    }
+    
+    .nome span{
+        color: #ffffff;
+        font-size: 50px;
+        font-family: "Playfair Display", serif;
+    }
+    
+    .empresa span {
+        color: #cccdcf;
+        font-size: 20px;
+        font-family: "Playfair Display", serif;
+    }
+    
+    .info {
+        margin-top: 20px;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        position: relative;
+    }
+    
+    .imagem-fundo {
+        object-fit: fill;
+        position: absolute;
+        width: 100%;
+        height: auto;
+        filter: brightness(50%);
+    }
+    
+    .trabalhos {
+        display: flex;
+        justify-content: space-evenly;
+        margin-bottom: 50px;
+    }
+    
+    .resume-card {
+        border: 1px solid;
+        height: 45vh;
+        width: 40vh;
+        position: relative;
+        transition: 200ms ease;
+    }
+    
+    .resume-content {
+        padding: 20px;
+    }
+    
+    .image-card img {
+        max-width: 40vh;
+        max-height: 40vh;
+        min-width: 40vh;
+    }
+    
+    .ver-mais-btn {
+        background-color: #4c6450;
+        padding: 10px;
+        border: none;
+        cursor: pointer;
+        transition: 150ms ease;
+        height: 20px;
+        width: 50px;
+        position: absolute;
+        bottom: 0;
+        margin-bottom: 10px;
+    }
+    
+    .ver-mais-btn a {
+        font-size: 12.5px;
+        color: #ffffff;
+    }
+    
+    .ver-mais-btn:hover {
+        scale: 95%;
+        transition: 150ms ease;
+    }
+    
+    .resume-card:hover {
+        scale: 102%;
+        transition: 200ms ease;
+    }
+    
+    .page-links:hover {
+        padding: 15px;
+        background-color: black;
+        scale: 110%;
+        transition: 200ms ease;
+        border-radius: 3px;
+    }
+    
+    .page-links {
+        transition: 200ms ease;
+    }
+    
+    .page-title {
+        display: flex;
+        justify-content: center;
+        margin-top: 20px;
+        margin-bottom: 0;
+    }
+    /* /configurações gerais e index */
+    
+/* Inicio Sobre mim */
+.secao-sobre-mim {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.paragrafo-sobre-mim {
+    font-size: 25px;
+    margin-right: 20px;
+    margin-left: 20px;
+}
+
+.sobre-mim-texto {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding-left: 30vh;
+    padding-right: 30vh;
+}
+
+.secao-1 {
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.img-secao {
+    height: 40vh;
+    width: 50vh;
+
+    display: flex;
+    overflow: hidden;
+    box-shadow: 25px 20px 5px 0px #b7b5b5
+}
+
+
+.img-secao-esquerda {
+    height: 40vh;
+    width: 50vh;
+    display: flex;
+    overflow: hidden;
+    box-shadow: -25px 20px 5px 0px #b7b5b5;
+}
+
+.img-secao img{
+    min-width: 100%;
+    min-height: 100%;
+}
+
+.img-secao-esquerda img{
+    min-width: 100%;
+    min-height: 100%;
+}
+
+.secao-1 p {
+    max-width: 90vh;
+}
+/* Fim sobre mim */
+
+/* Inicio formacao */
+.img-secao-formacao {
+    height: 60vh;
+    width: 50vh;
+
+    display: flex;
+    overflow: hidden;
+    box-shadow: 25px 20px 5px 0px #b7b5b5
+}
+
+
+.img-secao-formacao-esquerda {
+    height: 60vh;
+    width: 50vh;
+    display: flex;
+    overflow: hidden;
+    box-shadow: -25px 20px 5px 0px #b7b5b5;
+}
+
+.img-secao-formacao img{
+    min-width: 100%;
+    min-height: 100%;
+}
+
+.img-secao-formacao-esquerda img{
+    min-width: 100%;
+    min-height: 100%;
+}
+/* Fim Formacao */
+
+/* Inicio trabalhos */
+
+.btn-link-github {
+    padding: 10px;
+    background-color: #4c6450;
+    color: #ffffff;
+    margin-bottom: 20px;
+    transition: 200ms ease;
+    box-shadow: 0px 10px 20px 0px #949494;
+}
+
+.btn-link-github:hover {
+    background-color: rgb(88, 109, 92);
+    transition: 200ms ease;
+    box-shadow: 0px 10px 20px 2px #949494;
+}
+
+/* Fim trabalhos */
+
+/* Inicio formulario Contato */
+
+.formulario-contato {
+    display: flex;
+    margin: 5vh auto;
+    width: 800px;
+    border-radius: 70%;
+    position: relative;
+    flex-direction: column;
+    align-items: center;
+}
+
+.btn-enviar {
+    background-color: #4c6450;
+    color: #ffffff;
+    border: 0;
+    cursor: pointer;
+    padding: 10px;
+}
+
+.form-input {
+    border: 1px solid #cccccc;
+    width: 100%;
+    margin-bottom: 13px;
+    padding: 10px 10px;
+    outline: none;
+  }
+  
+.form-input:focus {
+    border: 1px solid #6f98f0;
+    transition: 200ms ease;
+}
+
+.container-enviado-msg-success {
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    
+    background-color: #86d493;
+    color: #000000;
+    width: 90%;
+    padding: 5px;
+
+    margin-bottom: 40px;
+}
+
+.container-enviado-msg-danger {
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    
+    background-color: #d83744;
+    color: #ffffff;
+    width: 90%;
+    padding: 5px;
+
+    margin-bottom: 40px;
+}
+
+.close-msg-btn {
+    position: absolute;
+    right: 0;
+    margin-right: 20px;
+    font-size: 15px;
+    transition: 200ms;
+}
+
+.close-msg-btn:hover {
+    cursor: pointer;
+}
+
+.mais-informacoes {
+    /* color: #a5a5a5; */
+    display: flex;
+    justify-content: center;
+}
+/* Fim formulario Contato */
+}
+
+@media only screen and (max-width: 1024px) {
+    body {
+        min-width: 100%;
+    }
+
+    img {
+        max-width: 100%;
+    }
+
+    .header {
+        display: flex;
+        justify-content: space-between;
+        max-width: 100% !important;
+        align-items: center;
+        max-height: 40px;
+        padding-left: 10px;
+        background-color: transparent;
+        position: absolute;
+        z-index: 2;
+        min-width: 100%;
+    }
+
+    .logo a{
+        color: #ffffff;
+    }
+
+    .links {
+        margin-right: 20px;
+    }
+
+    .page-links {
+        color: #ffffff !important;
+    }
+
+    .lista li {
+        display: inline;
+    }
+
+    .lista li a {
+        font-size: 10px;
+    }
+
+    .content {
+        /* display: none; */
+        min-width: 100%;
+    }
+
+    .imagem-fundo {
+        max-height: 100%;
+        object-fit: fill;
+        position: absolute;
+        min-width: 100%;
+        height: auto;
+        filter: brightness(50%);
+    }
+
+    .imagem-apresentacao {
+        /* height: 55vh; */
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            align-items: center;
+            overflow: hidden;
+            position: relative;
+    }
+
+    .imagem-apresentacao img {
+        max-width: 100%;
+        max-height: 100%;
+    }
+
+    .imagem-pfp {
+        margin-top: 50px;
+        height: 10vh;
+        width: 10vh;
+        border-radius: 100%;
+        background-color: #ffffff;
+    }
+    
+    .imagem-pfp img {
+        max-height: 10vh;
+        max-width: 10vh;
+        min-height: 10vh;
+        min-width: 10vh;
+        border-radius: 100%;
+        position: relative;
+    }
+
+    .info {
+        margin-top: 20px;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        position: relative;
+        margin-bottom: 20px;
+    }
+
+    .nome span{
+        color: #ffffff;
+        font-size: 15px;
+        font-family: "Playfair Display", serif;
+    }
+    
+    .empresa span {
+        color: #cccdcf;
+        font-size: 10px;
+        font-family: "Playfair Display", serif;
+    }
+
+    .page-title {
+        display: flex;
+        font-size: 20px;
+        justify-content: center;
+        margin-top: 20px;
+        margin-bottom: 0;
+    }
+
+    .separator {
+        border: 1px solid #c2c2c2;
+        margin: 5vh auto; /* Margem vertical de 5vh e margem horizontal automática para centralização */
+        width: 250px;
+        border-radius: 70%;
+        position: relative;
+    }
+
+
+    .secao-sobre-mim {
+        max-width: 100%;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .footer {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: #000000;
+        color: #ffffff;
+        padding: 10px;
+    }
+
+    .copyright {
+        font-size: 10px;
+    }
+
+    /* Trabalhos */
+
+    .btn-link-github {
+        font-size: 10px;
+        padding: 10px;
+        background-color: #4c6450;
+        color: #ffffff;
+        margin-bottom: 20px;
+        transition: 200ms ease;
+        /* box-shadow: 0px 10px 20px 0px #949494; */
+    }
+
+    .sobre-mim-texto {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+    /* /Trabalhos */
+
+    /* Inicio formulario Contato */
+
+.formulario-contato {
+    padding-left: 20px;
+    padding-right: 20px;
+    display: flex;
+    margin: 5vh auto;
+    border-radius: 70%;
+    position: relative;
+    flex-direction: column;
+    align-items: center;
+}
+
+.btn-enviar {
+    background-color: #4c6450;
+    color: #ffffff;
+    border: 0;
+    cursor: pointer;
+    padding: 10px;
+}
+
+.form-input {
+    border: 1px solid #cccccc;
+    width: 92%;
+    margin-bottom: 13px;
+    padding: 10px 10px;
+    outline: none;
+  }
+  
+.form-input:focus {
+    border: 1px solid #6f98f0;
+    transition: 200ms ease;
+}
+
+.container-enviado-msg-success {
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    
+    background-color: #86d493;
+    color: #000000;
+    width: 90%;
+    padding: 5px;
+
+    margin-bottom: 40px;
+}
+
+.container-enviado-msg-danger {
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    
+    background-color: #d83744;
+    color: #ffffff;
+    width: 90%;
+    padding: 5px;
+
+    margin-bottom: 40px;
+}
+
+.close-msg-btn {
+    position: absolute;
+    right: 0;
+    margin-right: 20px;
+    font-size: 15px;
+    transition: 200ms;
+}
+
+.close-msg-btn:hover {
+    cursor: pointer;
+}
+
+.mais-informacoes {
+    /* color: #a5a5a5; */
+    display: flex;
+    justify-content: center;
+}
+/* Fim formulario Contato */
+
+.resume-card {
+    margin-bottom: 20px;
+    padding: 20px;
+}
+.ver-mais-btn {
+    background-color: #4c6450;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+    transition: 150ms ease;
+    height: 20px;
+    width: 50px;
+    margin-top: 10px;
+    /* position: absolute; */
+    bottom: 0;
+    margin-bottom: 10px;
+}
+
+.ver-mais-btn a {
+    font-size: 12.5px;
+    color: #ffffff;
+}
+}

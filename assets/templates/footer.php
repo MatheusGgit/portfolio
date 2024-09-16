@@ -1,5 +1,5 @@
 <div class="footer">
-    <span class="copyright">Feito como trabalho para UNINTER</span>
+    <span class="copyright">Portfolio Matheus Garcia de Oliveira <?= date('Y') ?></span>
 </div>
 </body>
 
